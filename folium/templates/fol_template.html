@@ -101,16 +101,16 @@
       L.control.layers(baseLayer, layer_list).addTo(map);
 
       //cluster group
-      var clusteredmarkers = L.markerClusterGroup();
+      //var clusteredmarkers = L.markerClusterGroup();
       //section for adding clustered markers
-      {% for icon, mark, popup, add_mark in cluster_markers %}
-      {{ icon }}
-      {{ mark }}
-      {{ popup }}
-      {{ add_mark }}
-      {% endfor %}
+      //{% for icon, mark, popup, add_mark in cluster_markers %}
+      // {{ icon }}
+      // {{ mark }}
+      // {{ popup }}
+      // {{ add_mark }}
+      // {% endfor %}
       //add the clustered markers to the group anyway
-      map.addLayer(clusteredmarkers);
+      // map.addLayer(clusteredmarkers);
 
       {% for icon, mark, popup, add_mark in custom_markers %}
       {{ icon }}
